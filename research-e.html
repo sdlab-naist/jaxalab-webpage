@@ -2,99 +2,171 @@
 <html lang="en">
 
 <!-- Mirrored from stage.tksc.jaxa.jp/jedi/JAXAlab/research-e.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 13:54:59 GMT -->
+
 <head>
-<meta charset="utf-8">
-<title>RESEARCH | High Reliability Software System Verification Laboratory</title>
-<!--[if lt IE 9]>
+  <meta charset="utf-8">
+  <title>RESEARCH | High Reliability Software System Verification Laboratory</title>
+  <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 <![endif]-->
-<link href="css/style.css" rel="stylesheet" media="all">
+  <link href="css/style.css" rel="stylesheet" media="all">
 </head>
-<body>
-<div id="container">
-  <header id="header">
-    <h1><a href="index-e.html"><font color=#ffffff>High Reliability Software System Verification Laboratory</font></a></h1>
-  </header>
-  <div id="nav_frame">
-    <nav>
-      <ul id="nav1">
-        <li><a href="index-e.html">HOME</a></li>
-        <li><a href="research-e.html">RESEARCH</a></li>
-        <li><a href="members-e.html">MEMBERS</a></li>
-        <li><a href="publications-e.html">PUBLICATIONS</a></li>
-        <li><a href="access-e.html">ACCESS</a></li>
-        <li><a href="index-2.html">JAPANESE</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div id="main">
-    <h1>RESEARCH</h1>
-    <div id="main2">
-      <h2 class="mt0">Reliability and Safety Verification methodology</h2>
-      <h3>Verification method for robustness</h3>
-      <p>We research and develop the assurance methods for verification completeness, and the key technologies for robustness verification including the non-functional specifications.</p>
-      <h3>Automated verification method</h3>
-      <p>We first research on the analysis of system configuration, operational conditions and system error pattern models. Based on those concepts, algorithms and methodologies for the automated generation of verification cases and the automated success criteria of verification results will be developed.</p>
-	  
-	  <h2 class="mt0">Reliability and Safety Assurance methodology</h2>
-      <h3>Assurance method for verification completeness</h3>
-      <p>We research technology to evaluate verification completeness of whole End-to-End software systems based on verification information produced by various software systems.</p>
-      <h3>Assurance method for defect propagation</h3>
-      <p>We formulate systematic defect modes in the whole software system, then research and demonstrate the evaluation method of propagation effects into whole systems.</p>
-	  
-	  <h2>Explication and evaluation of general safety requirements using Goal Structuring Notation</h2><br>
-    <p>Safety requirements for a specific system domain like general safety require-
-ments and safety standards tend to have obscure and ambiguous descriptions.
-Misinterpretations of them can cause excessively redundant, or just deficient
-safety design, which can be a trigger of cost escalation or an accident as a
-worst case. In this research, we focus on implicit assumptions as a root of am-
-biguousness mentioned above and propose a method to explicate an article in
-general safety requirements aiming for mutual understanding among stakehold-
-ers and improving system safety. The target of our research is Computer-Based
-Control System (CBCS) safety requirements, which are a safety standard for
-spacecraft systems and explication in our method is carried out by means of
-Goal Structuring Notation (GSN). In order to evaluate our proposal in a quan-
-titative way, we performed a comparative experiment with the help of Japan
-Aerospace eXploration Agency's engineers. The result of the experiment shows
-that GSN-based CBCS safety requirements, which are obtained by our method,
-are more effective to detect and correct errors in a given document on system
-safety than usual safety requirements written in natural language. Moreover,
-by analyzing correlative relationship between the two results obtained by the
-experiment and by the interview to the examinees, we conclude that GSN-based
-CBCS safety requirements can reduce misunderstandings among developers of
-a system and certifiers for safety.</p>
-	<figure class="fl"><img src="image/kibou.jpg" width="330" height="300" alt="">
-      <figcaption>"KIBOU" is applied CBCS safety requirement</figcaption>
-    </figure>
-    <figure class="fr"><img src="image/CBCS1.png" width="330" height="300" alt="">
-      <figcaption>One example of constructed GSN</figcaption>
-    </figure>
-	
-	  <h2>Orthogonal Defect Classification for Spacecraft Software and its application for Verification Strategy </h2><br>
-    <p> Many countries besides Japan develop outer space technology such as artificial satellites. But insignificant software anomalies, complex component errors, and a lack of assumptions on the part of developers often cause utter project failures, e.g. Ariane 5 and the Mars Climate Orbiter. Reasons for such failures include the reuse of legacy systems and software development process problems. Independent Verification and Validation (IV&V) is one way of reducing the risks, with verification and validation done by independent organizations and through outside funding. Conversely, this method is confronted with many difficulties because it depends on manpower. Such difficulties include inconsistencies between systems, increased workloads, quality dependence for engineers, and know-how succession. Computer-aided verification is said to be an effective way of solving this problem if verification quality can be assured.
-  <br>&nbsp;&nbsp;The main objective of this research is to reveal better software verification strategies by using anomalies that are produced in spacecraft onboard software development projects. Orthogonal Defect Classification (ODC) is a defect classification method developed by Ram Chillarege. It uses quality analysis (e.g. HAZOP) and quantity analysis (e.g. FTA) aspects and can completely solve software problems by analyzing defect tendencies from defect characters and their respective numbers. ODC is widely used in industry fields because it does not depend on specific technology or a specific software development process.
-   <br>&nbsp;&nbsp;We propose improving this method for spacecraft onboard software to more accurately classify anomalies to establish a procedure for validation. We then apply our improved method to fifty anomalies from five spacecraft projects by using a root causal analysis method for ODC called Deep Dive for spacecraft software, which reveals root causes of and tendencies for problems.<br>&nbsp;&nbsp;We suppose that utilizing Software in Loop Simulation (SILS) and Hardware in Loop Simulation (HILS) for test optimization can improve the problem that spacecraft onboard software development has according to the defect analysis results. Simulations can run be used in early phase because they do not need hardware. They help to find more anomalies before System Test phase. Simulations can reduce testing cost because these can perform faster than real-time simulations and tests.  Moreover, these are used in some spacecraft onboard software developments. However, it takes enormous time to 
-   construct a scenario-based test case because these are made by professionals. We think that a scenario-based test case input generation can solve this problem by improving comprehensiveness while reducing costs. </p>
 
-	<CENTER><figure class= ""><img src="image/ODC.png" width="680" height="180" alt="">
-      <figcaption>Improved ODC for spacecraft onboard software verification strategy</figcaption>
-    </figure><CENTER>
-	<figure class="fl"><img src="image/solid.png" width="300" height="300" alt="">
-      <figcaption>Type/Supplier Testing Distribution</figcaption>
-    </figure>
-    <figure class="fr"><img src="image/table.png" width="330" height="248" alt="">
-      <figcaption>Trigger/Type Distribution</figcaption>
-    </figure>
+<body>
+  <div id="container">
+    <header id="header">
+      <h1><a href="index-e.html">
+          <font color=#ffffff>High Reliability Software System Verification Laboratory</font>
+        </a></h1>
+    </header>
+    <div id="nav_frame">
+      <nav>
+        <ul id="nav1">
+          <li><a href="index-e.html">HOME</a></li>
+          <li><a href="research-e.html">RESEARCH</a></li>
+          <li><a href="members-e.html">MEMBERS</a></li>
+          <li><a href="publications-e.html">PUBLICATIONS</a></li>
+          <li><a href="access-e.html">ACCESS</a></li>
+          <li><a href="index-2.html">JAPANESE</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main">
+      <h1>RESEARCH</h1>
+      <div id="main2">
+        <h2 class="mt0">Reliability and Safety Verification methodology</h2>
+        <h3>Verification method for robustness</h3>
+        <p>We research and develop the assurance methods for verification completeness, and the key technologies for
+          robustness verification including the non-functional specifications.</p>
+        <h3>Automated verification method</h3>
+        <p>We first research on the analysis of system configuration, operational conditions and system error pattern
+          models. Based on those concepts, algorithms and methodologies for the automated generation of verification
+          cases and the automated success criteria of verification results will be developed.</p>
+
+        <h2 class="mt0">Reliability and Safety Assurance methodology</h2>
+        <h3>Assurance method for verification completeness</h3>
+        <p>We research technology to evaluate verification completeness of whole End-to-End software systems based on
+          verification information produced by various software systems.</p>
+        <h3>Assurance method for defect propagation</h3>
+        <p>We formulate systematic defect modes in the whole software system, then research and demonstrate the
+          evaluation method of propagation effects into whole systems.</p>
+
+        <h2>Explication and evaluation of general safety requirements using Goal Structuring Notation</h2><br>
+        <p>Safety requirements for a specific system domain like general safety require-
+          ments and safety standards tend to have obscure and ambiguous descriptions.
+          Misinterpretations of them can cause excessively redundant, or just deficient
+          safety design, which can be a trigger of cost escalation or an accident as a
+          worst case. In this research, we focus on implicit assumptions as a root of am-
+          biguousness mentioned above and propose a method to explicate an article in
+          general safety requirements aiming for mutual understanding among stakehold-
+          ers and improving system safety. The target of our research is Computer-Based
+          Control System (CBCS) safety requirements, which are a safety standard for
+          spacecraft systems and explication in our method is carried out by means of
+          Goal Structuring Notation (GSN). In order to evaluate our proposal in a quan-
+          titative way, we performed a comparative experiment with the help of Japan
+          Aerospace eXploration Agency's engineers. The result of the experiment shows
+          that GSN-based CBCS safety requirements, which are obtained by our method,
+          are more effective to detect and correct errors in a given document on system
+          safety than usual safety requirements written in natural language. Moreover,
+          by analyzing correlative relationship between the two results obtained by the
+          experiment and by the interview to the examinees, we conclude that GSN-based
+          CBCS safety requirements can reduce misunderstandings among developers of
+          a system and certifiers for safety.</p>
+        <figure class="fl"><img src="image/kibou.jpg" width="330" height="300" alt="">
+          <figcaption>"KIBOU" is applied CBCS safety requirement</figcaption>
+        </figure>
+        <figure class="fr"><img src="image/CBCS1.png" width="330" height="300" alt="">
+          <figcaption>One example of constructed GSN</figcaption>
+        </figure>
+
+        <h2>Orthogonal Defect Classification for Spacecraft Software and its application for Verification Strategy </h2>
+        <br>
+        <p> Many countries besides Japan develop outer space technology such as artificial satellites. But insignificant
+          software anomalies, complex component errors, and a lack of assumptions on the part of developers often cause
+          utter project failures, e.g. Ariane 5 and the Mars Climate Orbiter. Reasons for such failures include the
+          reuse of legacy systems and software development process problems. Independent Verification and Validation
+          (IV&V) is one way of reducing the risks, with verification and validation done by independent organizations
+          and through outside funding. Conversely, this method is confronted with many difficulties because it depends
+          on manpower. Such difficulties include inconsistencies between systems, increased workloads, quality
+          dependence for engineers, and know-how succession. Computer-aided verification is said to be an effective way
+          of solving this problem if verification quality can be assured.
+          <br>&nbsp;&nbsp;The main objective of this research is to reveal better software verification strategies by
+          using anomalies that are produced in spacecraft onboard software development projects. Orthogonal Defect
+          Classification (ODC) is a defect classification method developed by Ram Chillarege. It uses quality analysis
+          (e.g. HAZOP) and quantity analysis (e.g. FTA) aspects and can completely solve software problems by analyzing
+          defect tendencies from defect characters and their respective numbers. ODC is widely used in industry fields
+          because it does not depend on specific technology or a specific software development process.
+          <br>&nbsp;&nbsp;We propose improving this method for spacecraft onboard software to more accurately classify
+          anomalies to establish a procedure for validation. We then apply our improved method to fifty anomalies from
+          five spacecraft projects by using a root causal analysis method for ODC called Deep Dive for spacecraft
+          software, which reveals root causes of and tendencies for problems.<br>&nbsp;&nbsp;We suppose that utilizing
+          Software in Loop Simulation (SILS) and Hardware in Loop Simulation (HILS) for test optimization can improve
+          the problem that spacecraft onboard software development has according to the defect analysis results.
+          Simulations can run be used in early phase because they do not need hardware. They help to find more anomalies
+          before System Test phase. Simulations can reduce testing cost because these can perform faster than real-time
+          simulations and tests. Moreover, these are used in some spacecraft onboard software developments. However, it
+          takes enormous time to
+          construct a scenario-based test case because these are made by professionals. We think that a scenario-based
+          test case input generation can solve this problem by improving comprehensiveness while reducing costs. </p>
+
+        <CENTER>
+          <figure class=""><img src="image/ODC.png" width="680" height="180" alt="">
+            <figcaption>Improved ODC for spacecraft onboard software verification strategy</figcaption>
+          </figure>
+          <CENTER>
+            <figure class="fl"><img src="image/solid.png" width="300" height="300" alt="">
+              <figcaption>Type/Supplier Testing Distribution</figcaption>
+            </figure>
+            <figure class="fr"><img src="image/table.png" width="330" height="248" alt="">
+              <figcaption>Trigger/Type Distribution</figcaption>
+            </figure>
+          </CENTER>
+        </CENTER>
+
+        <h2>Risk Analysis of Scenarios based on STAMP/STPA Using Statistical Model Checking</h2><br>
+        <p>STAMP (System-Theoretic Accident Model and Processes) is an accident model that can capture hazards caused
+          without components faults but inconsistency among subjective recognitions of involving components, systems or
+          human beings. Especially for modern complex systems like software-intensive systems, systems of systems (SoS),
+          cyber-physical systems (CPS), machine learning application systems, such type of accidents is one of the main
+          area of concerns in the context of risk management.<br>&nbsp;&nbsp;
+          STPA (System-Theoretic Process Analysis) is a method to analyze hazards based on STAMP.
+          In contrast to traditional hazard analysis techniques like FMEA (failure mode and effect analysis), FTA (fault
+          tree analysis), ETA (event tree analysis), and HAZOP, STPA is being expected to be used for analyzing hazards
+          of modern complex systems like autonomous driving vehicles.<br>&nbsp;&nbsp;
+          Among the traditional techniques, using FTA and ETA, the cause-effect relations from the events and conditions
+          that are the triggers, e.g. faults of components or environmental conditions, of the hazard to the final event
+          involving harm or an accident can be analyzed and described. In addition, associating probability to each
+          triggering event and condition we can obtain probability of the target hazard and can evaluate the associated
+          risk. On the other hand, STPA does not include risk assessment, i.e., activities for calculating and
+          evaluating risks, including prioritizing hazardous scenarios, are outside the scope. Moreover, hazardous
+          scenarios obtained by STPA based on the accident model STAMP are difficult to dealt with by FTA or ETA,
+          because these techniques do not allow to analyze dynamic interactions between components.<br>&nbsp;&nbsp;
+          In order to cope with such situation, we propose a method to analyze risk analysis for hazardous scenarios
+          obtained by STPA with the help of statistical model-checking. More precisely, to calculate probability of
+          hazardous scenarios with statistical model-checking, we give a systematic translation procedure from the
+          result of STAMP/STPA activities to formal models for a statistical model-checking tool Uppaal SMC. We also
+          show a case study of our proposed method applying to a railroad crossing system. As a result, we could obtain
+          probability of some example hazardous scenarios through formally modeling the artifacts from STAMP/STPA and
+          then evaluate the risks.</p>
+
+          <CENTER>
+            <figure class=""><img src="image/study-overview-tsuji.png" width="650" height="300" alt="">
+              <figcaption>An overview of the proposed method</figcaption>
+            </figure>
+          <CENTER>
+
+
+      </div>
     </div>
   </div>
-</div>
-<footer>
-  <div id="footer_color">
-    <div id="copy">Copyright &copy; High Reliability Software System Verification Lab All rights reserved.</div>
-  </div>
-</footer>
+  <footer>
+    <div id="footer_color">
+      <div id="copy">Copyright &copy; High Reliability Software System Verification Lab All rights reserved.</div>
+    </div>
+  </footer>
 </body>
 
 <!-- Mirrored from stage.tksc.jaxa.jp/jedi/JAXAlab/research-e.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Mar 2020 13:55:00 GMT -->
+
 </html>
